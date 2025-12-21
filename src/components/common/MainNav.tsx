@@ -32,7 +32,7 @@ const navItems = [
         href: "/shop/jewellery",
         icon: Gem,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "All Jewellery", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw576bc3f9/header-mega-menu/thumbnail-icons/all-jewellery-l3.png" },
@@ -49,7 +49,7 @@ const navItems = [
                     { label: "Pendant & Earring Set", href: "/shop/jewellery?cat=sets", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw4d4e462e/header-mega-menu/thumbnail-icons/pendant-earring-set.png" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw20b368e1/header-mega-menu/banner-images/all-jew-below-25k-hr.jpg" },
@@ -58,7 +58,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwcae5cbad/header-mega-menu/banner-images/all-jew-1l-above-hr.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Daily Wear", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -67,7 +67,7 @@ const navItems = [
                     { label: "Wedding", href: "/shop/jewellery?occasion=wedding", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9a08e4ad/header-mega-menu/banner-images/traditional-wear.jpg" },
                 ]
             },
-            Gender: {
+            'Gender': {
                 isGridView: true,
                 items: [
                     { label: "Women", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7887f04d/header-mega-menu/banner-images/her-hr.jpg" },
@@ -80,7 +80,7 @@ const navItems = [
     {
         label: "Gold", href: "/products?cat=gold", icon: Crown,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "All Gold", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwbca73ce8/header-mega-menu/thumbnail-icons/all-gold.jpg" },
@@ -97,7 +97,7 @@ const navItems = [
                     { label: "Gold Mangalsutras", href: "/shop/jewellery?cat=sets", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw37e9c9c9/header-mega-menu/thumbnail-icons/gold-mangalsutra.jpg" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw0e9896f2/header-mega-menu/banner-images/gold-below-25k-hr.jpg" },
@@ -106,7 +106,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwa4220fbc/header-mega-menu/banner-images/gold-1l-above-hr.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Daily Wear", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -115,7 +115,7 @@ const navItems = [
                     { label: "Wedding", href: "/shop/jewellery?occasion=wedding", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9a08e4ad/header-mega-menu/banner-images/traditional-wear.jpg" },
                 ]
             },
-            Gender: {
+            'Gender': {
                 isGridView: true,
                 items: [
                     { label: "Women", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7887f04d/header-mega-menu/banner-images/her-hr.jpg" },
@@ -136,7 +136,7 @@ const navItems = [
     {
         label: "Diamond", href: "/products?cat=diamond", icon: Diamond,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "All Diamond", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw6a433dbb/header-mega-menu/thumbnail-icons/all-diamonds.jpg" },
@@ -151,7 +151,7 @@ const navItems = [
                     { label: "Diamond Pendants", href: "/shop/jewellery?cat=pendants", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw8c5227e9/header-mega-menu/thumbnail-icons/diamond-pendant.jpg" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw2d61daa1/header-mega-menu/banner-images/diamond-below-25k-hr.jpg" },
@@ -160,7 +160,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw2ca55223/header-mega-menu/banner-images/diamond-1l-hr.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Daily Wear", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -169,7 +169,7 @@ const navItems = [
                     { label: "Wedding", href: "/shop/jewellery?occasion=wedding", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9a08e4ad/header-mega-menu/banner-images/traditional-wear.jpg" },
                 ]
             },
-            Gender: {
+            'Gender': {
                 isGridView: true,
                 items: [
                     { label: "Women", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7887f04d/header-mega-menu/banner-images/her-hr.jpg" },
@@ -182,7 +182,7 @@ const navItems = [
     {
         label: "Earrings", href: "/products?cat=earrings", icon: Sparkles,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "All Earrings", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7773c9b5/All%20Earrings%2040.png" },
@@ -192,7 +192,7 @@ const navItems = [
                     { label: "Studs & Tops", href: "/shop/jewellery?cat=finger-rings", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwd0add32c/Studs%20&%20Tops.png" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw2672b3bd/header-mega-menu/banner-images/earrings-below-25k-hr.jpg" },
@@ -201,7 +201,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw078d9d74/header-mega-menu/banner-images/earrings-1l-above-hr.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Daily Wear", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -210,7 +210,7 @@ const navItems = [
                     { label: "Wedding", href: "/shop/jewellery?occasion=wedding", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9a08e4ad/header-mega-menu/banner-images/traditional-wear.jpg" },
                 ]
             },
-            Gender: {
+            'Gender': {
                 isGridView: true,
                 items: [
                     { label: "Women", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7887f04d/header-mega-menu/banner-images/her-hr.jpg" },
@@ -222,7 +222,7 @@ const navItems = [
     {
         label: "Rings", href: "/products?cat=rings", icon: Circle,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "All Rings", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwbcf9062f/header-mega-menu/thumbnail-icons/finger-rings.png" },
@@ -235,7 +235,7 @@ const navItems = [
                     { label: "Platinum Engagement Rings", href: "/shop/jewellery?cat=finger-rings", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw5deb4582/header-mega-menu/thumbnail-icons/platinum-engagement-rings.jpg" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwec212c3f/header-mega-menu/banner-images/rings-below-25k-hr.jpg" },
@@ -244,7 +244,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw982479af/header-mega-menu/banner-images/rings-1l-above-hr.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Daily Wear", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -253,7 +253,7 @@ const navItems = [
                     { label: "Wedding", href: "/shop/jewellery?occasion=wedding", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9a08e4ad/header-mega-menu/banner-images/traditional-wear.jpg" },
                 ]
             },
-            Gender: {
+            'Gender': {
                 isGridView: true,
                 items: [
                     { label: "Women", href: "/shop/jewellery?occasion=daily-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw7887f04d/header-mega-menu/banner-images/her-hr.jpg" },
@@ -277,7 +277,7 @@ const navItems = [
     {
         label: "Daily Wear", href: "/products?cat=daily-wear", icon: Sun,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: false,
                 items: [
                     { label: "Dailywear Jewellery", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw502b458e/header-mega-menu/thumbnail-icons/dailywear-jewellery.png" },
@@ -288,7 +288,7 @@ const navItems = [
                     { label: "Dailywear Pendents", href: "/shop/jewellery?cat=finger-rings", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw072e79a4/header-mega-menu/thumbnail-icons/dailywear-pendant.png" },
                 ]
             },
-            Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw517b7808/header-mega-menu/banner-images/dailywear-below-25k.jpg" },
@@ -297,7 +297,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw237484f5/header-mega-menu/banner-images/dailywear-1l-above.jpg" },
                 ]
             },
-            Style: {
+            'Style': {
                 isGridView: true,
                 items: [
                     { label: "Office Wear", href: "/shop/jewellery?occasion=office-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwebf3e1cb/header-mega-menu/banner-images/office-wear.jpg" },
@@ -326,7 +326,7 @@ const navItems = [
     {
         label: "Wedding", href: "/products?cat=wedding", icon: HeartHandshake,
         subItems: {
-            Category: {
+            'Category': {
                 isGridView: true,
                 items: [
                     { label: "All Rivaah", href: "/shop/jewellery", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw45e8131a/header-mega-menu/banner-images/rivaah-jewellery.jpg" },
@@ -338,7 +338,7 @@ const navItems = [
                     { label: "Accessories", href: "/shop/jewellery?cat=finger-rings", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw473ac013/header-mega-menu/banner-images/rivaah-accessories.jpg" },
                 ]
             },
-            Community: {
+            'Community': {
                 isGridView: true,
                 items: [
                     { label: "Marathi Bride", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw03f12062/header-mega-menu/banner-images/marathi-bride.jpg" },
@@ -346,7 +346,7 @@ const navItems = [
                     { label: "Kannada Bride", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw6bd447b6/header-mega-menu/banner-images/kannada-bride.jpg" },
                 ]
             },
-            Metal: {
+            'Metal': {
                 isGridView: true,
                 items: [
                     { label: "Plain Gold", href: "/shop/jewellery?occasion=office-wear", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw23cf2af9/header-mega-menu/banner-images/rivaah-plain-gold.jpg" },
@@ -358,8 +358,9 @@ const navItems = [
             },
         }
     },
-    { label: "Gifting", href: "/products?cat=gifting", icon: Gift ,
-         subItems: {
+    {
+        label: "Gifting", href: "/products?cat=gifting", icon: Gift,
+        subItems: {
             'Gifts For': {
                 isGridView: true,
                 items: [
@@ -368,7 +369,7 @@ const navItems = [
                     { label: "Kids", href: "/shop/jewellery?cat=bracelets", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw6b05e529/header-mega-menu/banner-images/kids.jpg" },
                 ]
             },
-             Price: {
+            'Price': {
                 isGridView: true,
                 items: [
                     { label: "< 25K", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwa4bfbb39/header-mega-menu/banner-images/gifting-below-25k.jpg" },
@@ -377,7 +378,7 @@ const navItems = [
                     { label: "1L & Above", href: "/shop/jewellery?price=1l-above", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwc03d049a/header-mega-menu/banner-images/gifting-1l-above.jpg" },
                 ]
             },
-            Occasion: {
+            'Occasion': {
                 isGridView: true,
                 items: [
                     { label: "Wedding", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw2f28be90/header-mega-menu/banner-images/gifting-wedding.jpg" },
@@ -386,7 +387,7 @@ const navItems = [
                     { label: "Auspicious", href: "/shop/jewellery?price=below-25k", image: "https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw290497c4/header-mega-menu/banner-images/gifting-auspicious.jpg" },
                 ]
             },
-           
+
         }
     },
 ]
@@ -395,8 +396,14 @@ type MainNavProps = {
     hide: boolean
 }
 
+type SubItemsMap = NonNullable<(typeof navItems)[number]["subItems"]>
+type SubItemKey = keyof SubItemsMap
+
 export default function MainNav({ hide }: MainNavProps) {
-    const [activeFilter, setActiveFilter] = useState<string | null>(null)
+    const [activeFilter, setActiveFilter] = useState<SubItemKey>(
+        Object.keys(navItems[0].subItems ?? {})[0] as SubItemKey
+    );
+
 
     return (
         <div
@@ -412,8 +419,8 @@ export default function MainNav({ hide }: MainNavProps) {
                             {item.subItems ? (
                                 <>
                                     <NavigationMenuTrigger onMouseEnter={() => {
-                                        const firstKey = Object.keys(item.subItems)[0]
-                                        setActiveFilter(firstKey)
+                                        const firstKey = Object.keys(item.subItems)[0] as SubItemKey;
+                                        setActiveFilter(firstKey);
                                     }} className="flex gap-2 text-gray-600 hover:text-[#3b0a0a]">
                                         <item.icon size={18} />
                                         {item.label}
@@ -443,7 +450,7 @@ export default function MainNav({ hide }: MainNavProps) {
                                             <div className="w-3/4">
                                                 {item?.subItems[activeFilter]?.isGridView ? (
                                                     <div className="grid grid-cols-4 gap-6">
-                                                        {item?.subItems[activeFilter]?.items?.map((sub) => (
+                                                        {item?.subItems[activeFilter]?.items?.map((sub: any) => (
                                                             <Link
                                                                 key={sub.label}
                                                                 href={sub.href}
@@ -486,23 +493,21 @@ export default function MainNav({ hide }: MainNavProps) {
                                                                 </Link>
                                                             ))}
                                                         </div>
-                                                        {Array.from({
-                                                            length:
-                                                                Math?.ceil(item.subItems[activeFilter]?.items?.length / 4) - 1,
-                                                        }).map((_, i) => (
-                                                            <Separator
-                                                                key={i}
-                                                                orientation="vertical"
-                                                                className="absolute top-0 bottom-0"
-                                                                style={{
-                                                                    left: `${(i + 1) *
-                                                                        (100 /
-                                                                            Math.ceil(
-                                                                                item.subItems[activeFilter].items.length / 4
-                                                                            ))}%`,
-                                                                }}
-                                                            />
-                                                        ))}
+                                                        {activeFilter && item.subItems[activeFilter]?.items?.length ? (
+                                                            Array.from({ length: Math.ceil(item.subItems[activeFilter]!.items!.length / 4) - 1 }).map((_, i) => (
+                                                                <Separator
+                                                                    key={i}
+                                                                    orientation="vertical"
+                                                                    className="absolute top-0 bottom-0"
+                                                                    style={{
+                                                                        left: `${(i + 1) * (100 / Math.ceil(item.subItems[activeFilter]!.items!.length / 4))}%`,
+                                                                    }}
+                                                                />
+                                                            ))
+                                                        ) : null}
+
+
+
                                                     </div>
                                                 )}
                                             </div>
