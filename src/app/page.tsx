@@ -5,6 +5,7 @@ import GetReadyWithMe from "@/components/home/GetReadyWithMe";
 import Hero from "@/components/home/Hero";
 import NewArrivalsHero from "@/components/home/NewArrivalsHero";
 import PerfectMatchCollection from "@/components/home/PerfectMatchCollection";
+import TestimonialSection from "@/components/home/TestimonialSection";
 import TrendingCards from "@/components/home/TrendingCards";
 import TrustBadges from "@/components/home/TrustBadges";
 import ProductCard from "@/components/product/ProductCard";
@@ -22,6 +23,7 @@ export default function Home() {
       <TrustBadges />
       <NewArrivalsHero />
       <CuratedForYou />
+      <TestimonialSection />
     </div>
   );
 }

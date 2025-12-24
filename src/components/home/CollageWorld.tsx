@@ -15,21 +15,25 @@ export default function CollageWorld() {
             <div className="grid grid-cols-2 gap-x-2 gap-y-2">
                 <div className="flex flex-col gap-2">
                     <CollageCard
-                        title="Wedding"
+                        title="Bridal Elegance"
+                        subTitle="For vows, rituals & forever moments"
                         image="/images/world/wedding.png"
                     />
                     <CollageCard
-                        title="Gold"
+                        title="Golden Heritage"
+                        subTitle="Classic gold, crafted for generations"
                         image="/images/world/gold.png"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
                     <CollageCard
-                        title="Diamond"
+                        title="Diamond Dreams"
+                        subTitle="Brilliance that lasts forever"
                         image="/images/world/diamond.png"
                     />
                     <CollageCard
-                        title="Dailywear"
+                        title="Everyday Grace"
+                        subTitle="Effortless elegance, every single day"
                         image="/images/world/dailywear.png"
                     />
                 </div>
@@ -40,9 +44,11 @@ export default function CollageWorld() {
 
 function CollageCard({
     title,
+    subTitle,
     image,
 }: {
     title: string
+    subTitle: string
     image: string
 }) {
     return (
@@ -58,9 +64,11 @@ function CollageCard({
                 className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#8b1e1e]/70 via-transparent to-transparent" />
-            <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-lg font-semibold">
-                {title}
-            </span>
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white">
+                <p className="text-lg font-semibold">{title}</p>
+                <p className="text-sm opacity-90">{subTitle}</p>
+            </div>
+
         </Link>
     )
 }

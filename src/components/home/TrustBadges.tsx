@@ -26,8 +26,7 @@ export default function TrustBadges() {
                 >
                     <Separator />
                     <p className="text-center text-sm md:text-lg italic text-muted-foreground max-w-lg">
-                        Trust us to be part of your precious moments and to deliver
-                        jewellery that you'll cherish forever.
+                        Crafted with love, our jewellery becomes a timeless part of your unforgettable moments.
                     </p>
                     <Separator />
                 </div>
@@ -45,7 +44,7 @@ export default function TrustBadges() {
                                     alt={item.label}
                                     className="h-40 w-40 object-contain"
                                 />
-                               
+
                             </div>
                             <p className="text-xs md:text-sm leading-snug">
                                 {item.label}
@@ -66,7 +65,7 @@ export default function TrustBadges() {
                                         alt={item.label}
                                         className="h-30 w-30 object-contain"
                                     />
-                                  
+
                                 </div>
                                 <p className="text-xs leading-snug">
                                     {item.label}

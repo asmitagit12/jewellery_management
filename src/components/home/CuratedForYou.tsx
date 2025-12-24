@@ -3,15 +3,15 @@ import Image from "next/image"
 const items = [
     {
         title: "Women Jewellery",
-        image: "/images/curated/women.jpg",
+        image: "/images/curated/w-2.jpg",
     },
     {
         title: "Men Jewellery",
-        image: "/images/curated/men.png",
+        image: "/images/curated/m-1.jpg",
     },
     {
         title: "Kids Jewellery",
-        image: "/images/curated/kids.png",
+        image: "/images/curated/k-2.jpg",
     },
 ]
 

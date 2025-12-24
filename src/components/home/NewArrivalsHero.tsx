@@ -6,12 +6,12 @@ export default function NewArrivalsHero() {
             <div
                 className="relative w-full h-[420px] md:h-[350px] bg-cover bg-center"
                 style={{
-                    backgroundImage: "url('/images/new-arrival/new-arrivals-background.jpg')",
+                    backgroundImage: "url('/images/new-arrival/new_arrival.jpg')",
                 }}
             >
                 <div className="absolute inset-0 bg-black/10" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-14 md:pt-20 text-white">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-14 md:pt-20 text-gray-900">
                     <div className="max-w-md">
                         <div className="flex items-center gap-2 mb-3">
                             <h2 className="text-2xl md:text-3xl font-serif font-semibold">
@@ -23,9 +23,9 @@ export default function NewArrivalsHero() {
                         </div>
 
                         <p className="text-sm md:text-base leading-relaxed">
-                            New Arrivals Dropping Daily, Monday through Friday.
+                            We drop something new every weekday.
                             <br />
-                            Explore the Latest Launches Now!
+                            Come explore our latest arrivals!
                         </p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export default function NewArrivalsHero() {
                         <div className="rounded-2xl bg-white p-2 shadow-lg">
                             <div className="relative rounded-xl overflow-hidden">
                                 <img
-                                    src="/images/new-arrival/silver-idol.jpg"
+                                    src="/images/new-arrival/silver.jpg"
                                     alt="Silver Idols"
                                     className="h-64 w-full object-cover"
                                 />
@@ -50,7 +50,7 @@ export default function NewArrivalsHero() {
                         <div className="rounded-2xl bg-white p-2 shadow-lg">
                             <div className="relative rounded-xl overflow-hidden">
                                 <img
-                                    src="/images/new-arrival/floral-bloom.jpg"
+                                    src="/images/new-arrival/floral.jpeg"
                                     alt="Floral Bloom"
                                     className="h-64 w-full object-cover"
                                 />

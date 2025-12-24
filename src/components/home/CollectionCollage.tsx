@@ -12,7 +12,7 @@ export default function CollectionCollage() {
                     className="relative overflow-hidden rounded-2xl group h-[520px] lg:h-[620px]"
                 >
                     <Image
-                        src="/images/collection/floral-bloom-desktop.png"
+                        src="/images/collection/col-1.jpg"
                         alt="Floral Bloom"
                         fill
                         priority
@@ -27,7 +27,7 @@ export default function CollectionCollage() {
                         className="relative overflow-hidden rounded-2xl group h-[250px] lg:h-[300px]"
                     >
                         <Image
-                            src="/images/collection/stunning-every-ear.png"
+                            src="/images/collection/collection-2.jpg"
                             alt="Earrings"
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -39,7 +39,7 @@ export default function CollectionCollage() {
                         className="relative overflow-hidden rounded-2xl group h-[250px] lg:h-[300px]"
                     >
                         <Image
-                            src="/images/collection/wedding-gifts.jpg"
+                            src="/images/collection/col-3.jpg"
                             alt="Wedding Gifts"
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-105"

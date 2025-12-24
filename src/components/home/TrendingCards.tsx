@@ -53,7 +53,6 @@ export default function TrendingCards() {
                     </Link>
                 ))}
             </div>
-
         </section>
     )
 }
