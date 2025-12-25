@@ -66,7 +66,7 @@ function CollageCard({
             <div className="absolute inset-0 bg-gradient-to-t from-[#8b1e1e]/70 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white">
                 <p className="text-lg font-semibold">{title}</p>
-                <p className="text-sm opacity-90">{subTitle}</p>
+                <p className="hidden md:block text-sm opacity-90">{subTitle}</p>
             </div>
 
         </Link>

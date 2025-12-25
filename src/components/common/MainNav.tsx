@@ -26,7 +26,7 @@ import {
     Gift,
 } from "lucide-react"
 
-const navItems = [
+export const navItems = [
     {
         label: "All Jewellery",
         href: "/shop/jewellery",

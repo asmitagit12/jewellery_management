@@ -29,54 +29,8 @@ import {
 } from "@/components/ui/sheet"
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 import MainNav from "./MainNav"
+import { navItems } from "./MainNav"
 
-export const navItems = [
-    {
-        label: "All Jewellery",
-        href: "/products",
-        icon: Gem,
-    },
-    {
-        label: "Gold",
-        href: "/products?cat=gold",
-        icon: Crown,
-    },
-    {
-        label: "Diamond",
-        href: "/products?cat=diamond",
-        icon: Diamond,
-    },
-    {
-        label: "Earrings",
-        href: "/products?cat=earrings",
-        icon: Sparkles,
-    },
-    {
-        label: "Rings",
-        href: "/products?cat=rings",
-        icon: Circle,
-    },
-    {
-        label: "Daily Wear",
-        href: "/products?cat=daily-wear",
-        icon: Sun,
-    },
-    {
-        label: "Collections",
-        href: "/products?cat=collections",
-        icon: Layers,
-    },
-    {
-        label: "Wedding",
-        href: "/products?cat=wedding",
-        icon: HeartHandshake,
-    },
-    {
-        label: "Gifting",
-        href: "/products?cat=gifting",
-        icon: Gift,
-    },
-]
 
 export default function Header() {
     return (
@@ -102,54 +56,66 @@ export default function Header() {
                             </div>
 
                             <nav className="flex flex-col divide-y">
-                                {navItems.map(({ label, href, icon: Icon }) => (
-                                    <Link
-                                        key={label}
-                                        href={href}
-                                        className="
-        group relative flex items-center justify-between
-        px-4 py-4 text-sm font-medium
-        transition-all duration-300
-        hover:bg-[#3b0a0a]/10
-        hover:text-[#3b0a0a]
-      "
-                                    >
-                                        <div className="flex items-center gap-3">
-                                            <Icon
-                                                size={18}
-                                                className="text-muted-foreground transition-colors duration-300 group-hover:text-[#3b0a0a]"
-                                            />
-                                            <span
-                                                className="
-            relative
-            after:absolute after:left-0 after:-bottom-1
-            after:h-[2px] after:w-0
-            after:bg-[#3b0a0a]
-            after:transition-all after:duration-300
-            group-hover:after:w-full
-          "
+                                {navItems?.map(({ label, href, icon: Icon, subItems }) => (
+                                    <div key={label}>
+                                        {!subItems ? (
+                                            <Link
+                                                href={href}
+                                                className="flex items-center justify-between px-4 py-4 hover:bg-[#3b0a0a]/10"
                                             >
-                                                {label}
-                                            </span>
-                                        </div>
+                                                <div className="flex items-center gap-3">
+                                                    <Icon size={18} />
+                                                    {label}
+                                                </div>
+                                                <span>›</span>
+                                            </Link>
+                                        ) : (
+                                            <Sheet>
+                                                <SheetTrigger asChild>
+                                                    <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-[#3b0a0a]/10">
+                                                        <div className="flex items-center gap-3">
+                                                            <Icon size={18} />
+                                                            {label}
+                                                        </div>
+                                                        <span>›</span>
+                                                    </button>
+                                                </SheetTrigger>
 
-                                        <span className="text-lg text-muted-foreground transition-colors duration-300 group-hover:text-[#3b0a0a]">
-                                            ›
-                                        </span>
-                                    </Link>
+                                                <SheetContent side="left" className="w-[85%] p-0 overflow-y-auto">
+                                                    <div className="border-b px-4 py-4 text-lg font-semibold">
+                                                        {label}
+                                                    </div>
+
+                                                    {Object.entries(subItems)?.map(([section, data]) => (
+                                                        <div key={section} className="px-4 py-4">
+                                                            <h4 className="text-sm font-bold mb-3">{section}</h4>
+
+                                                            <div className="grid grid-cols-2 gap-2">
+                                                                {data?.items?.map((item: any) => (
+                                                                    <Link
+                                                                        key={item.label}
+                                                                        href={item.href}
+                                                                        className="flex items-center gap-3 rounded-lg border p-3 hover:bg-[#f7f4f4]"
+                                                                    >
+                                                                        <img
+                                                                            src={item.image}
+                                                                            alt={item.label}
+                                                                            className="h-10 w-10 rounded object-cover"
+                                                                        />
+                                                                        <span className="text-sm">{item.label}</span>
+                                                                    </Link>
+                                                                ))}
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </SheetContent>
+
+                                            </Sheet>
+                                        )}
+                                    </div>
                                 ))}
+
                             </nav>
-
-
-
-                            <div className="flex gap-3 p-4">
-                                <Button className="w-full" variant="secondary">
-                                    INR (₹)
-                                </Button>
-                                <Button className="w-full" variant="outline">
-                                    USD ($)
-                                </Button>
-                            </div>
                         </SheetContent>
                     </Sheet>
                 </div>
