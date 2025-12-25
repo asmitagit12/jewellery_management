@@ -30,9 +30,14 @@ import {
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 import MainNav from "./MainNav"
 import { navItems } from "./MainNav"
+import ImageSearchSheet from "./ImageSearchSheet"
+import { useState } from "react"
+import VoiceSearch from "./VoiceSearch"
 
 
 export default function Header() {
+    const [searchValue, setSearchValue] = useState("")
+
     return (
         <header className="w-full bg-white shadow-sm">
             <div className="container mx-auto flex items-center justify-between px-4 py-4">
@@ -135,10 +140,12 @@ export default function Header() {
                     <Input
                         placeholder="Search for gold necklace"
                         className="h-12 rounded-full pl-12 pr-20"
+                        value={searchValue}
+                        onChange={(e) => setSearchValue(e.target.value)}
                     />
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-4">
-                        <Camera size={18} className="cursor-pointer" />
-                        <Mic size={18} className="cursor-pointer" />
+                        <ImageSearchSheet />
+                        <VoiceSearch onResult={(text) => setSearchValue(text)} />
                     </div>
                 </div>
 
