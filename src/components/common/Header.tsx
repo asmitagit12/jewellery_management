@@ -33,10 +33,12 @@ import { navItems } from "./MainNav"
 import ImageSearchSheet from "./ImageSearchSheet"
 import { useState } from "react"
 import VoiceSearch from "./VoiceSearch"
+import { useRouter } from "next/navigation";
 
 
 export default function Header() {
     const [searchValue, setSearchValue] = useState("")
+    const router = useRouter();
 
     return (
         <header className="w-full bg-white shadow-sm">
@@ -76,6 +78,11 @@ export default function Header() {
                                             </Link>
                                         ) : (
                                             <Sheet>
+                                                <SheetHeader>
+                                                    <VisuallyHidden>
+                                                        <SheetTitle>Category Menu</SheetTitle>
+                                                    </VisuallyHidden>
+                                                </SheetHeader>
                                                 <SheetTrigger asChild>
                                                     <button className="w-full flex items-center justify-between px-4 py-4 hover:bg-[#3b0a0a]/10">
                                                         <div className="flex items-center gap-3">
@@ -150,9 +157,12 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center gap-5">
-                    <Heart className="cursor-pointer" />
-                    <ShoppingBag className="cursor-pointer" />
-                    <User className="cursor-pointer" />
+                    <Heart className="cursor-pointer" onClick={() => router.push("/login")} />
+                    <ShoppingBag className="cursor-pointer" onClick={() => router.push("/login")} />
+                    <User
+                        className="cursor-pointer"
+                        onClick={() => router.push("/login")}
+                    />
                 </div>
             </div>
         </header>

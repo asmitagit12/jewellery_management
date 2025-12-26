@@ -11,7 +11,13 @@ export default function VoiceSearch({ onResult }: VoiceSearchProps) {
     const [isListening, setIsListening] = useState(false);
     const recognitionRef = useRef<any>(null);
 
-    const startRecognition = async () => {
+    const handleMicClick = async () => {
+        if (isListening && recognitionRef.current) {
+            recognitionRef.current.stop();
+            setIsListening(false);
+            return;
+        }
+
         if (!("webkitSpeechRecognition" in window)) {
             alert("Voice recognition not supported in this browser.");
             return;
@@ -27,14 +33,18 @@ export default function VoiceSearch({ onResult }: VoiceSearchProps) {
         const SpeechRecognition = (window as any).webkitSpeechRecognition;
         recognitionRef.current = new SpeechRecognition();
         recognitionRef.current.lang = "en-IN";
-        recognitionRef.current.continuous = false;
-        recognitionRef.current.interimResults = false;
+        recognitionRef.current.continuous = true;
+        recognitionRef.current.interimResults = true;
 
         recognitionRef.current.onstart = () => setIsListening(true);
-        recognitionRef.current.onend = () => setIsListening(false);
+
+        recognitionRef.current.onend = () => {
+            if (!isListening) return;
+            recognitionRef.current.start();
+        };
 
         recognitionRef.current.onresult = (event: any) => {
-            const text = event.results[0][0].transcript;
+            const text = event.results[event.results.length - 1][0].transcript;
             onResult(text);
         };
 
@@ -45,7 +55,7 @@ export default function VoiceSearch({ onResult }: VoiceSearchProps) {
         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
             <Mic
                 size={18}
-                onClick={startRecognition}
+                onClick={handleMicClick}
                 style={{
                     cursor: "pointer",
                     transition: "0.3s",
@@ -53,6 +63,7 @@ export default function VoiceSearch({ onResult }: VoiceSearchProps) {
                     transform: isListening ? "scale(1.2)" : "scale(1)",
                 }}
             />
+
             {isListening && (
                 <div style={{ display: "flex", gap: "4px" }}>
                     <span className="bar" style={barStyle(0.1)}></span>
@@ -60,15 +71,12 @@ export default function VoiceSearch({ onResult }: VoiceSearchProps) {
                     <span className="bar" style={barStyle(0.3)}></span>
                 </div>
             )}
+
             <style jsx>{`
         @keyframes updown {
-          0%,
-          100% {
-            transform: scaleY(0.6);
-          }
-          50% {
-            transform: scaleY(1.4);
-          }
+          0% { transform: scaleY(0.6); }
+          50% { transform: scaleY(1.6); }
+          100% { transform: scaleY(0.6); }
         }
         .bar {
           width: 3px;
